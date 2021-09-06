@@ -21,15 +21,8 @@ class _paginaPrincipalState extends State<PaginaPrincipal>{
 
       colorTransition(k, 180, 0);
       colorFondo = Color.fromRGBO(colorNuevo[0],colorNuevo[1],colorNuevo[2],colorNuevo[3].toDouble());
-      if(n >=0 && n < 10){
-        caritaCalor = '🥶';
-      }else if(n >=10 && n < 20){
-        caritaCalor = '😃';
-      }else if(n >=20 && n < 30){
-        caritaCalor = '😐';
-      }else{
-        caritaCalor = '🥵';
-      }
+
+      caritaCalor = (n<10)?'🥶':(n<20)?'😃':(n<30)?'😐':'🥵';
     });
   }
 
@@ -92,7 +85,7 @@ class _paginaPrincipalState extends State<PaginaPrincipal>{
           children: <Widget>[
             Text(caritaCalor, style: TextStyle(fontSize: 100)),
             const SizedBox(height: 24,),
-            Text('$grados grados Centigrados', style: TextStyle(fontSize: 80)),
+            Text((grados==1)?'$grados grado Centigrado':'$grados grados Centigrados', style: TextStyle(fontSize: 80)),
             Spacer(),
             TextButton(
               onPressed: () => cambiarClima(), 
