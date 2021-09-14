@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'webviewejem.dart';
 
 class MyTabBar extends StatelessWidget {
   @override
@@ -10,21 +11,36 @@ class MyTabBar extends StatelessWidget {
           appBar: AppBar(
             bottom: TabBar(
               tabs: [
-                Tab(icon: Icon(Icons.music_note)),
-                Tab(icon: Icon(Icons.email)),
-                Tab(icon: Icon(Icons.gamepad)),
-                Tab(icon: Icon(Icons.sailing)),
-                Tab(icon: Icon(Icons.exit_to_app))
+                Tab(
+                  icon: Icon(Icons.music_note),
+                  text: "Amazon",
+                ),
+                Tab(
+                  icon: Icon(Icons.email),
+                  text: "Bungie",
+                ),
+                Tab(
+                  icon: Icon(Icons.gamepad),
+                  text: "Craigslist",
+                ),
+                Tab(
+                  icon: Icon(Icons.sailing),
+                  text: "Guacamole",
+                ),
+                Tab(
+                  icon: Icon(Icons.exit_to_app),
+                  text: "Salir",
+                )
               ],
             ),
             title: Text("Ejemplo Tabs"),
             backgroundColor: Colors.blue,
           ),
           body: TabBarView(children: [
-            Icon(Icons.music_note),
-            Icon(Icons.email),
-            Icon(Icons.gamepad),
-            Icon(Icons.sailing),
+            WebViewEjemplo("https://www.amazon.com.mx/"),
+            WebViewEjemplo("https://www.bungie.net/"),
+            WebViewEjemplo("https://mexicocity.craigslist.org/"),
+            WebViewEjemplo("https://lab.anahuac.mx/guacamole"),
             Icon(Icons.exit_to_app),
           ]),
         ),
