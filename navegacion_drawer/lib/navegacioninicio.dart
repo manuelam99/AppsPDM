@@ -13,8 +13,8 @@ class navegacioninicio extends StatelessWidget {
       home: inicio(),
       routes: {
         rutas.rutainicio : (context) => inicio(),
-        rutas.contacto : (context) => contacto(),
-        rutas.perfil : (context) => perfil()
+        rutas.rutacontacto : (context) => contacto(),
+        rutas.rutaperfil : (context) => perfil()
       },
     );
   }

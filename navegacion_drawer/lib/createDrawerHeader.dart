@@ -1,4 +1,3 @@
-// TODO Implement this library.
 import 'package:flutter/material.dart';
 
 Widget createDrawerHeader() {
@@ -16,7 +15,7 @@ Widget createDrawerHeader() {
         Positioned(
           bottom: 12.0,
           left: 16.0,
-          child: Text('ejemplo', style: TextStyle(color: Colors.white, fontSize: 20.0),
+          child: Text('ejemplo', style: TextStyle(color: Colors.white, fontSize: 20.0)),
         )
       ],
     )

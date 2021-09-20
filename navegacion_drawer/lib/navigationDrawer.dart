@@ -11,17 +11,17 @@ class navigationDrawer extends StatelessWidget {
        padding: EdgeInsets.zero,
        children: <Widget> [
          createDrawerHeader(),
-         createDrawerBody(
+         createDrawerBodyItem(
            icon: Icons.home,
            texto: 'Inicio',
            onTap: () => Navigator.pushReplacementNamed(context, rutas.rutainicio)
          ),
-         createDrawerBody(
+         createDrawerBodyItem(
            icon: Icons.home,
            texto: 'Contacto',
            onTap: () => Navigator.pushReplacementNamed(context, rutas.rutacontacto)
          ),
-         createDrawerBody(
+         createDrawerBodyItem(
            icon: Icons.home,
            texto: 'Perfil',
            onTap: () => Navigator.pushReplacementNamed(context, rutas.rutaperfil)

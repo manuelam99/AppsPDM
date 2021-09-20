@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:navegacion_drawer/navigationDrawer.dart';
 
-class inicio extends StatelessWidget {
-  static const String nombreruta = '/inicio';
+class contacto extends StatelessWidget {
+  static const String nombreruta = '/contacto';
   
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('inicio')
+        title: Text('contacto')
       ),
       drawer: navigationDrawer(),
       body: Center(
-        child: Text('soy inicio')
+        child: Text('soy contacto')
       )
     );
   }
