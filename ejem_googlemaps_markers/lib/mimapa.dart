@@ -4,6 +4,7 @@ import 'package:location/location.dart';
 import 'descripcionlugar.dart';
 
 class MiMapa extends StatefulWidget {
+  const MiMapa({Key? key}) : super(key: key);
   @override
   _MiMapaState createState() => _MiMapaState();
 }
@@ -75,6 +76,7 @@ class _MiMapaState extends State<MiMapa> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
