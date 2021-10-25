@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "653579864096",
+    "project_id": "storage-demo-13a9e",
+    "storage_bucket": "storage-demo-13a9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653579864096:android:f41bf894efbac361ded445",
+        "android_client_info": {
+          "package_name": "com.example.ejem_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653579864096-kjnrb7jshks52950jjrjq3ptvgfcmd4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGSyQOhMYsWebIrh8e2c6rb6FrhG0OfJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653579864096-kjnrb7jshks52950jjrjq3ptvgfcmd4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
